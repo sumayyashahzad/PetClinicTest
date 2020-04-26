@@ -31,7 +31,7 @@ public class jsonfilereading {
 	@Keyword
 	def mappingff(){
 		ObjectMapper mapper = new ObjectMapper();
-		File file = new File('D:\\j.json');
+		File file = new File('./body.json');
 
 		aaa	=mapper.readValue(file, featuremodel.class);
 		return aaa;

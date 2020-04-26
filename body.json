@@ -1,0 +1,43 @@
+{
+  "featureData": {
+    "sd": {
+      "dev": [
+      {
+  "firstName": "Omair",
+  "lastName": "hussain",
+  "specialties": [
+    {
+      "id": 2,
+      "name":"test"
+    }
+  ]
+}
+      ],
+	  "qa": [
+      {
+  "firstName": "QA",
+  "lastName": "hussain",
+  "specialties": [
+    {
+      "id": 2,
+      "name":"test"
+    }
+  ]
+}
+      ],
+	  "uat": [
+      {
+  "firstName": "uat",
+  "lastName": "hussain",
+  "specialties": [
+    {
+      "id": 2,
+      "name":"test"
+    }
+  ]
+}
+      ]
+      
+    }
+  }
+}
