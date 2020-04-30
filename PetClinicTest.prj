@@ -6,6 +6,7 @@
    <UUID>2f78cdc7-7a34-4450-a6f9-8e79fa462ede</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>D:\PetClinicTest\PetClinicTest.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

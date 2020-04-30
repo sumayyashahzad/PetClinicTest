@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>getOwners</name>
+   <name>getOwner</name>
    <tag></tag>
-   <elementGuidId>fcc5dbb5-44db-4b36-82f4-2972834564e1</elementGuidId>
+   <elementGuidId>edb6f594-2d8e-4a44-ab5d-a3524b810da9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -26,7 +26,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://localhost:9966/petclinic/api/owners</restUrl>
+   <restUrl>http://localhost:9966/petclinic/api/owners/${ownerId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -35,9 +35,16 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>638970f3-4fd6-419f-8ed1-1c6500822de1</id>
+      <id>92b35779-aaac-47e3-8bdd-a1e34acbc953</id>
       <masked>false</masked>
       <name>basicToken</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2375d682-f6cf-4da6-83cc-64b9560861ae</id>
+      <masked>false</masked>
+      <name>ownerId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

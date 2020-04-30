@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>getOwners</name>
+   <name>DeleteOwner</name>
    <tag></tag>
-   <elementGuidId>fcc5dbb5-44db-4b36-82f4-2972834564e1</elementGuidId>
+   <elementGuidId>20c7e6f9-022c-4b07-89dd-170ac55a30da</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -25,8 +29,8 @@
       <value>${basicToken}</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://localhost:9966/petclinic/api/owners</restUrl>
+   <restRequestMethod>DELETE</restRequestMethod>
+   <restUrl>http://localhost:9966/petclinic/api/owners/${ownerId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -35,9 +39,16 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>638970f3-4fd6-419f-8ed1-1c6500822de1</id>
+      <id>3c8475e9-fd65-4fd3-8d23-8df26e8a33d9</id>
       <masked>false</masked>
       <name>basicToken</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d385c42d-76e3-4875-bfd1-a0150474c2a4</id>
+      <masked>false</masked>
+      <name>ownerId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
