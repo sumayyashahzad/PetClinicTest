@@ -30,7 +30,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>http://localhost:9966/petclinic/api/owners/${ownerId}</restUrl>
+   <restUrl>${base_url}/api/owners/${ownerId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -49,6 +49,13 @@
       <id>d385c42d-76e3-4875-bfd1-a0150474c2a4</id>
       <masked>false</masked>
       <name>ownerId</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.base_url</defaultValue>
+      <description></description>
+      <id>e2e76794-2dbe-4a82-955f-6495ab296552</id>
+      <masked>false</masked>
+      <name>base_url</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

@@ -26,7 +26,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://localhost:9966/petclinic/api/owners</restUrl>
+   <restUrl>${base_url}/api/owners</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -38,6 +38,13 @@
       <id>638970f3-4fd6-419f-8ed1-1c6500822de1</id>
       <masked>false</masked>
       <name>basicToken</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.base_url</defaultValue>
+      <description></description>
+      <id>28f5625d-66df-4207-bdb6-e6d81d2702f4</id>
+      <masked>false</masked>
+      <name>base_url</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
