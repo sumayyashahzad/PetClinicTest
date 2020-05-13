@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>default</name>
-   <tag></tag>
-   <comment>With body: $addOwnerRequest.getHttpBody()</comment>
-   <testCaseGuid>12e37fae-f159-453c-ab87-d17c184c279f</testCaseGuid>
-</TestCaseEntity>
